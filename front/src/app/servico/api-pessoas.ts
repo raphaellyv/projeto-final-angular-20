@@ -8,7 +8,7 @@ import { Observable } from 'rxjs/internal/Observable';
 })
 export class ApiPessoas {
   // URL da API
-  private url: string = 'http://localhost:3000/pessoas';
+  private url: string = 'https://projeto-final-angular-20-back.onrender.com/pessoas/';
 
   // Construtor
   constructor(private http: HttpClient) {}
@@ -26,16 +26,16 @@ export class ApiPessoas {
   // Selecionar pessoas por id
   selecionarPessoa(id: string): Observable<Pessoa> {
     // return this.http.get<Pessoa>(this.url + id);
-    return this.http.get<Pessoa>(`${this.url}/${id}`);
+    return this.http.get<Pessoa>(`${this.url}${id}`);
   }
 
   // Alterar pessoas
   alterar(pessoa: Pessoa): Observable<Pessoa> {
-    return this.http.put<Pessoa>(`${this.url}/${pessoa.id}`, JSON.stringify(pessoa));
+    return this.http.put<Pessoa>(`${this.url}${pessoa.id}`, JSON.stringify(pessoa));
   }
 
   // Remover pessoas
   remover(id: string): Observable<Pessoa> {
-    return this.http.delete<Pessoa>(`${this.url}/${id}`);
+    return this.http.delete<Pessoa>(`${this.url}${id}`);
   }
 }
