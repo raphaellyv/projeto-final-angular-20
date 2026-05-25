@@ -1,0 +1,35 @@
+{
+  "pessoas": [
+    {
+      "nome": "Raphaelly",
+      "cidade": "São João da Barra",
+      "id": "I3pazcUiilc"
+    },
+    {
+      "nome": "Ana",
+      "cidade": "Florianópolis",
+      "id": "1THqanZ_46Y"
+    },
+    {
+      "nome": "Jason",
+      "cidade": "Campinas",
+      "id": "lTzgGGP7APo"
+    },
+    {
+      "nome": "Isabela",
+      "cidade": "Niterói",
+      "id": "e8g8n0R-W1s"
+    },
+    {
+      "nome": "Isabela",
+      "cidade": "Niterói",
+      "id": "WwBi9ncC6LU"
+    },
+    {
+      "nome": "Outro",
+      "cidade": "SJB",
+      "id": "cJJ3ue1wiug"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}
